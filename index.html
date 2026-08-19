@@ -72,6 +72,7 @@ body {
 .background {
 
     position: fixed;
+
     inset: 0;
 
     z-index: -20;
@@ -1444,7 +1445,7 @@ main {
 
 
 /* =========================================================
-   GALERÍA DE FOTOS
+   GALERÍA
 ========================================================= */
 
 .chapter-gallery {
@@ -2022,51 +2023,31 @@ main {
 @media (max-width: 500px) {
 
     .center {
-
-        width:
-            120px;
-
-        height:
-            120px;
+        width: 120px;
+        height: 120px;
     }
 
     .center-name {
-
-        font-size:
-            29px;
+        font-size: 29px;
     }
 
     .node {
-
-        width:
-            76px;
-
-        height:
-            76px;
+        width: 76px;
+        height: 76px;
     }
 
     .node svg {
-
-        width:
-            25px;
-
-        height:
-            25px;
+        width: 25px;
+        height: 25px;
     }
 
     .chapter-text {
-
-        font-size:
-            20px;
-
-        line-height:
-            1.68;
+        font-size: 20px;
+        line-height: 1.68;
     }
 
     .chapter-highlight {
-
-        font-size:
-            22px;
+        font-size: 22px;
     }
 }
 
@@ -2074,69 +2055,43 @@ main {
 @media (max-width: 380px) {
 
     .constellation {
-
-        width:
-            100vw;
+        width: 100vw;
     }
 
     .center {
-
-        width:
-            108px;
-
-        height:
-            108px;
+        width: 108px;
+        height: 108px;
     }
 
     .center-name {
-
-        font-size:
-            26px;
+        font-size: 26px;
     }
 
     .node {
-
-        width:
-            68px;
-
-        height:
-            68px;
+        width: 68px;
+        height: 68px;
     }
 
     .node svg {
-
-        width:
-            21px;
-
-        height:
-            21px;
+        width: 21px;
+        height: 21px;
     }
 
     .node span {
-
-        font-size:
-            5.5px;
+        font-size: 5.5px;
     }
 
     .chapter-title {
-
-        font-size:
-            40px;
+        font-size: 40px;
     }
 
     .chapter-text {
-
-        font-size:
-            19px;
-
-        line-height:
-            1.65;
+        font-size: 19px;
+        line-height: 1.65;
     }
 
     .chapter-highlight {
-
-        font-size:
-            21px;
+        font-size: 21px;
     }
 }
 
@@ -2184,10 +2139,6 @@ main {
 </audio>
 
 
-<!-- =====================================================
-     FONDO
-===================================================== -->
-
 <div class="background"></div>
 
 
@@ -2227,7 +2178,7 @@ main {
     <div class="intro-content">
 
         <div class="intro-overline">
-            Una historia
+            Para ti
         </div>
 
         <h1 class="intro-title">
@@ -2236,10 +2187,9 @@ main {
 
         <p class="intro-subtitle">
 
-            Algunas personas llegan a nuestra vida
-            sin que las estemos buscando...
-            y terminan convirtiéndose en parte
-            de ella.
+            Hay personas que llegan sin avisar,
+            sin saber cuánto van a cambiar nuestra vida.
+            Esta es la historia de cómo llegaste a la mía.
 
         </p>
 
@@ -2248,7 +2198,7 @@ main {
             onclick="enterStory()"
         >
 
-            DESCUBRIR
+            COMENZAR
 
         </button>
 
@@ -2267,9 +2217,7 @@ main {
     onclick="toggleMusic()"
 >
 
-    <svg
-        viewBox="0 0 24 24"
-    >
+    <svg viewBox="0 0 24 24">
 
         <path
             d="
@@ -2306,10 +2254,6 @@ main {
 </button>
 
 
-<!-- =====================================================
-     TITULO
-===================================================== -->
-
 <div class="top-title">
 
     <span>
@@ -2334,48 +2278,42 @@ main {
         preserveAspectRatio="none"
     >
 
-        <line
-            id="line1"
+        <line id="line1"
             x1="50"
             y1="50"
             x2="50"
             y2="8"
         />
 
-        <line
-            id="line2"
+        <line id="line2"
             x1="50"
             y1="50"
             x2="87"
             y2="30"
         />
 
-        <line
-            id="line3"
+        <line id="line3"
             x1="50"
             y1="50"
             x2="82"
             y2="72"
         />
 
-        <line
-            id="line4"
+        <line id="line4"
             x1="50"
             y1="50"
             x2="50"
             y2="92"
         />
 
-        <line
-            id="line5"
+        <line id="line5"
             x1="50"
             y1="50"
             x2="18"
             y2="72"
         />
 
-        <line
-            id="line6"
+        <line id="line6"
             x1="50"
             y1="50"
             x2="13"
@@ -2384,8 +2322,6 @@ main {
 
     </svg>
 
-
-    <!-- CENTRO -->
 
     <div class="center">
 
@@ -2400,7 +2336,9 @@ main {
     </div>
 
 
-    <!-- 01 -->
+    <!-- =================================================
+         01 COMIENZO
+    ================================================== -->
 
     <button
         class="node node-1 unlocked current"
@@ -2592,7 +2530,7 @@ main {
         </svg>
 
         <span>
-            Ella
+            Lunna
         </span>
 
     </button>
@@ -2652,10 +2590,6 @@ main {
 
 </main>
 
-
-<!-- =====================================================
-     PROGRESO
-===================================================== -->
 
 <div class="progress">
 
@@ -2747,7 +2681,7 @@ main {
 
 
 <!-- =====================================================
-     PANTALLA FINAL
+     FINAL
 ===================================================== -->
 
 <div
@@ -2758,9 +2692,7 @@ main {
     <div class="final-content">
 
         <div class="final-overline">
-
-            Y todavía queda mucho por escribir
-
+            Y esto recién comienza
         </div>
 
 
@@ -2774,14 +2706,25 @@ main {
 
         <p class="final-text">
 
-            Algunas historias no necesitan
-            saber cómo terminan.
+            No sé exactamente qué forma tendrá
+            todo lo que viene.
 
             <br><br>
 
-            Solo necesitan dos personas
-            que quieran seguir escribiéndolas.
-            Te amo con la vida amor mío.
+            Pero sí sé que quiero estar ahí para
+            descubrirlo contigo.
+
+            <br><br>
+
+            Quiero seguir conociéndote, seguir
+            riéndome contigo, seguir besándote
+            hasta perder la noción del tiempo,
+            seguir construyendo momentos y,
+            sobre todo, seguir eligiéndote.
+
+            <br><br>
+
+            Te amo con la vida, amor mío.
 
         </p>
 
@@ -2946,11 +2889,15 @@ function enterStory() {
 const chapters = {
 
 
+    /* =====================================================
+       CAPÍTULO 01
+    ===================================================== */
+
     1: {
 
         number: "01",
 
-        title: "El comienzo",
+        title: "Donde todo comenzó",
 
         photos: [
 
@@ -2963,43 +2910,71 @@ const chapters = {
         text: `
 
             <p>
-                Hay encuentros que parecen pequeños
-                cuando están ocurriendo, pero que con
-                el tiempo uno termina entendiendo que
-                fueron mucho más importantes de lo que
-                imaginaba.
+                Todo comenzó de una manera que ninguno de
+                los dos podía imaginar. Nos conocimos por
+                redes sociales. Tú hablaste primero, yo te
+                seguí y, casi sin darnos cuenta, comenzamos
+                a conversar.
             </p>
 
             <p>
-                Quizás ninguno de los dos sabía realmente
-                lo que estaba comenzando. Éramos simplemente
-                dos personas que se encontraron, comenzaron
-                a hablar y poco a poco fueron descubriendo
-                que había algo diferente detrás de cada
-                conversación.
+                Al principio pensaste que yo era simplemente
+                uno más del montón. Quizás por mi antiguo
+                trabajo como conductor de buses te hiciste
+                una idea bastante distinta de quién era yo.
+                Y me causa gracia pensar en eso ahora.
             </p>
 
             <p>
-                Y eso es justamente lo bonito de algunas
-                historias: no comienzan con una gran
-                declaración. Comienzan simplemente con
-                dos personas que deciden seguir hablando.
+                Pero mientras más hablábamos, más descubrías
+                cómo pienso, qué quiero para mi vida, mis
+                proyectos, mis aspiraciones y la forma en que
+                veo las cosas. Y algo cambió.
+            </p>
+
+            <p>
+                Yo, por mi parte, desde el comienzo descubrí
+                a una mujer preciosa, intensa, única y
+                absolutamente ella. Una mujer sensible,
+                alegre, adorable, sentimental y con una forma
+                de mirar la vida que me llamó muchísimo la
+                atención.
+            </p>
+
+            <p>
+                Pero hubo algo que para mí fue todavía más
+                importante: tu madurez, tu responsabilidad
+                afectiva y esa forma tan tuya de saber lo que
+                quieres.
+            </p>
+
+            <p>
+                Quizás ese día ninguno de los dos sabía que
+                estaba comenzando algo. Pero hoy, mirando hacia
+                atrás, me gusta pensar que fue el primer
+                pequeño punto de nuestra historia.
             </p>
 
         `,
 
         highlight: `
-            A veces el comienzo de algo importante
-            se parece muchísimo a una simple casualidad.
+
+            No estaba buscando encontrarte.
+            Y quizás por eso fue tan bonito hacerlo.
+
         `
     },
 
+
+    /* =====================================================
+       CAPÍTULO 02
+    ===================================================== */
 
     2: {
 
         number: "02",
 
-        title: "Nuestros momentos",
+        title: "Cuando todo fluyó",
 
         photos: [
 
@@ -3012,32 +2987,64 @@ const chapters = {
         text: `
 
             <p>
-                Después comenzaron a aparecer esos
-                pequeños momentos que, quizás vistos
-                desde afuera, podrían parecer normales.
+                Después de aquel primer contacto llegó algo
+                que terminó acercándonos muchísimo más:
+                nuestras conversaciones.
             </p>
 
             <p>
-                Pero nosotros sabemos que no lo fueron.
-                Cada conversación, cada risa, cada mirada
-                y cada instante compartido fue construyendo
-                algo que empezó a sentirse cada vez más
-                nuestro.
+                Hablábamos durante todo el día. A veces
+                seguíamos de noche, otras veces hasta la
+                madrugada. Y nunca parecía suficiente.
+                Siempre había algo más que contar, preguntar,
+                descubrir o simplemente compartir.
             </p>
 
             <p>
-                Hay recuerdos que no necesitan ser enormes
-                para quedarse contigo.
+                Recuerdo especialmente nuestra primera vez
+                juntos, el 8 de agosto. Nos vimos físicamente
+                por primera vez y terminamos en un restaurante
+                chino, comiendo y conversando como si ya nos
+                conociéramos desde hacía muchísimo tiempo.
+            </p>
+
+            <p>
+                Después fuimos por un helado. Nos sentamos en
+                una banca, frente a la heladería, y seguimos
+                hablando. No hubo silencios incómodos ni
+                necesidad de aparentar nada. Todo simplemente
+                fluyó.
+            </p>
+
+            <p>
+                Y también recuerdo aquella primera flor que
+                llevé a tu trabajo. Puede parecer un gesto
+                pequeño, pero para mí representaba algo
+                importante: las ganas de hacerte sentir
+                especial.
+            </p>
+
+            <p>
+                Poco a poco, esos momentos comenzaron a dejar
+                de sentirse como simples recuerdos y empezaron
+                a sentirse como nuestra propia historia.
             </p>
 
         `,
 
         highlight: `
-            Fueron todos esos pequeños instantes
-            que empezaron a sentirse como nosotros.
+
+            Lo increíble no fue cuánto tiempo llevábamos
+            conociéndonos. Fue lo natural que se sintió estar
+            juntos.
+
         `
     },
 
+
+    /* =====================================================
+       CAPÍTULO 03
+    ===================================================== */
 
     3: {
 
@@ -3056,35 +3063,61 @@ const chapters = {
         text: `
 
             <p>
-                Y en algún momento dejamos de ser
-                simplemente dos personas conociéndose.
+                Creo que nosotros siempre tuvimos algo
+                diferente.
             </p>
 
             <p>
-                Empezamos a convertirnos en nosotros.
+                Somos intensos. Los dos. Y lejos de asustarnos,
+                encontramos en eso una forma de entendernos.
+                Buscábamos lo mismo, queríamos sentir, querer,
+                entregar y vivir las cosas de verdad.
             </p>
 
             <p>
-                Quizás una de las cosas que más me sorprende
-                es lo rápido que algo puede sentirse tan
-                cercano cuando existe una conexión verdadera.
+                Desde aquella primera vez que nos vimos,
+                cuando llegaste y nos besamos prácticamente
+                de inmediato, hubo algo que dejó de necesitar
+                explicaciones.
             </p>
 
             <p>
-                Simplemente podíamos ser nosotros mismos.
-                Intensos, imperfectos, cariñosos,
-                espontáneos y completamente entregados
-                a descubrir qué podía salir de todo esto.
+                Y nuestros besos se transformaron rápidamente
+                en parte de nosotros. Esos besos eternos que
+                parecen no querer terminar y que tantas veces
+                nos han hecho perder completamente la noción
+                del tiempo.
+            </p>
+
+            <p>
+                Después llegó aquel momento en que decidí
+                pedirte que fueras mi polola. Y quise hacerlo
+                de una manera que fuera nuestra, algo que
+                recordaras, algo que tuviera dedicación y que
+                demostrara que detrás de ese momento había
+                mucho más que una simple pregunta.
+            </p>
+
+            <p>
+                Porque quizás eso somos nosotros: dos personas
+                que sienten mucho y que no tienen miedo de
+                demostrarlo.
             </p>
 
         `,
 
         highlight: `
-            Contigo descubrí que algunas conexiones
-            no necesitan explicación. Simplemente se sienten.
+
+            No sé en qué momento dejamos de ser tú y yo
+            para empezar a sentirnos como nosotros.
+
         `
     },
 
+
+    /* =====================================================
+       CAPÍTULO 04
+    ===================================================== */
 
     4: {
 
@@ -3103,42 +3136,71 @@ const chapters = {
         text: `
 
             <p>
-                Conocerte también significó comenzar a
-                conocer tu mundo.
+                Conocerte no ha sido solamente conocer a la
+                mujer de la que me estoy enamorando. También
+                ha sido descubrir todo el mundo que existe
+                dentro de ti.
             </p>
 
             <p>
-                Tus sueños, tus preocupaciones, tus
-                historias, las cosas que te hacen reír
-                y también las partes de ti que quizás
-                no siempre muestras.
+                Me encanta verte cuando hablas de tu trabajo.
+                Eres psicopedagoga y se nota profundamente que
+                no lo haces solamente porque sea tu profesión.
+                Te apasiona.
             </p>
 
             <p>
-                Mientras más te conozco, más entiendo
-                que no me enamora solamente la persona
-                que veo cuando estamos juntos.
+                Te gusta estar con tus niños, acompañarlos,
+                jugar con ellos, entenderlos y entregarles
+                cariño. Especialmente con aquellos que necesitan
+                una mirada distinta, más paciente, más sensible
+                y más comprensiva.
             </p>
 
             <p>
-                También me importa la mujer que eres
-                cuando nadie está mirando.
+                También admiro la mujer soñadora que eres.
+                La que imagina su propia casa, su quincho,
+                su perro, sus hijos creciendo rodeados de amor
+                y paz, y una familia construida de la manera
+                que siempre soñaste.
+            </p>
+
+            <p>
+                Admiro tu resiliencia. Tu determinación.
+                Tu capacidad de levantarte, seguir adelante
+                y continuar entregando amor incluso después
+                de las cosas difíciles que te ha tocado vivir.
+            </p>
+
+            <p>
+                Y quizás una de las cosas que más amo de ti
+                es esa contradicción tan bonita que llevas
+                dentro: eres fuerte y sensible, determinada
+                y dulce, intensa y tierna, soñadora pero
+                profundamente responsable.
             </p>
 
         `,
 
         highlight: `
-            Quiero conocer tu mundo, no solamente
-            la parte de él que compartes conmigo.
+
+            No solamente me enamora la mujer que eres conmigo.
+            Me enamora la mujer que eres cuando estás
+            entregando amor a los demás.
+
         `
     },
 
+
+    /* =====================================================
+       CAPÍTULO 05
+    ===================================================== */
 
     5: {
 
         number: "05",
 
-        title: "Ella",
+        title: "Vanna y Lunna",
 
         photos: [
 
@@ -3151,43 +3213,61 @@ const chapters = {
         text: `
 
             <p>
-                Hay una parte de tu vida que merece
-                un lugar especial en esta historia.
+                Hay una parte de tu mundo que merece un lugar
+                especialmente importante dentro de esta
+                historia: Lunna.
             </p>
 
             <p>
-                Ella.
+                Cuando te veo con ella entiendo muchas cosas
+                de ti que quizás las palabras nunca podrían
+                explicar.
             </p>
 
             <p>
-                Porque entenderte también significa
-                entender el amor que tienes por tu hija,
-                la importancia que tiene para ti y todo
-                lo que representa dentro de tu vida.
+                Eres cariñosa, protectora, cómplice y también
+                sabes ser estricta cuando corresponde. Y ella,
+                con sus apenas dos años, tiene esa personalidad
+                despierta, juguetona e intensa que parece tener
+                muchísimo de ti.
             </p>
 
             <p>
-                No quiero escribir estas palabras como
-                alguien que pretende ocupar un lugar que
-                no le corresponde.
+                Me sorprende profundamente la conexión que
+                tienen. La forma en que juegan, se buscan,
+                se ríen, se acompañan y simplemente disfrutan
+                estar juntas.
             </p>
 
             <p>
-                Quiero escribirlas como alguien que está
-                aprendiendo a conocer a la mujer que ama,
-                y que entiende que una parte enorme de
-                su corazón está dedicada a alguien que
-                siempre será fundamental para ella.
+                Recuerdo especialmente verla contigo mientras
+                tomábamos helado. Es uno de esos momentos que
+                quizás parecen pequeños, pero que para mí
+                significan muchísimo porque me permiten conocer
+                una parte muy importante de tu corazón.
+            </p>
+
+            <p>
+                Sé que tus hijos son una de las cosas más
+                importantes de tu vida. Y eso es algo que
+                admiro profundamente de ti.
             </p>
 
         `,
 
         highlight: `
-            Conocer una parte tan importante de tu vida
-            también me permitió conocerte un poquito más a ti.
+
+            Verte amar a Lunna me permitió entender una parte
+            de ti que quizás nunca habría podido conocer
+            solamente con palabras.
+
         `
     },
 
+
+    /* =====================================================
+       CAPÍTULO 06
+    ===================================================== */
 
     6: {
 
@@ -3206,41 +3286,63 @@ const chapters = {
         text: `
 
             <p>
-                Y quizás esta sea la parte más bonita
-                de toda esta historia.
+                Y llegamos a la parte de nuestra historia que
+                todavía no está escrita.
             </p>
 
             <p>
-                Porque todavía no sabemos exactamente
-                qué viene después.
+                Esa es quizás la parte que más ilusión me hace.
+                Porque tú tienes sueños. Yo también. Y ahora
+                existe la posibilidad de que algunos de esos
+                sueños puedan comenzar a caminar juntos.
             </p>
 
             <p>
-                No sabemos cuántas fotografías vamos a
-                terminar guardando, cuántas aventuras
-                nos esperan o cuántas historias todavía
-                nos faltan por vivir.
+                Sé cuánto deseas esa familia que siempre
+                imaginaste. Una casa que sientas completamente
+                tuya, un quincho, un perro, hijos creciendo
+                felices, independientes y profesionales, y
+                especialmente Lunna creciendo rodeada de amor,
+                tranquilidad y paz.
             </p>
 
             <p>
-                Pero hay algo que sí sé.
+                No quiero prometerte que todo será perfecto.
+                La vida nunca lo es.
             </p>
 
             <p>
-                Me gusta la historia que estamos
-                comenzando a escribir.
+                Pero sí quiero prometerte algo mucho más real:
+                quiero estar presente. Quiero acompañarte,
+                escucharte, apoyarte y seguir descubriendo
+                contigo qué podemos construir.
             </p>
 
             <p>
-                Y quiero seguir descubriendo cada capítulo
-                contigo.
+                Quiero más restaurantes chinos, más helados,
+                más conversaciones hasta la madrugada, más
+                flores, más aventuras, más besos interminables
+                y más momentos que algún día podamos mirar
+                hacia atrás y decir: "¿te acuerdas de esto?"
+            </p>
+
+            <p>
+                Porque todavía llevamos muy poco tiempo
+                escribiendo esta historia.
+            </p>
+
+            <p>
+                Y, aun así, tengo una certeza enorme:
+                quiero seguir escribiéndola contigo.
             </p>
 
         `,
 
         highlight: `
-            Esta página tiene un final.
-            Nuestra historia todavía no.
+
+            Esta página tiene un último capítulo.
+            Lo nuestro todavía tiene infinitas páginas por escribir.
+
         `
     }
 
@@ -3333,12 +3435,6 @@ function renderGallery(
             img.alt =
                 `Fotografía ${index + 1}`;
 
-
-            /*
-               Si todavía no existe la foto,
-               mantenemos un espacio elegante
-               en lugar de mostrar un icono roto.
-            */
 
             img.onerror =
                 function() {
@@ -3491,11 +3587,6 @@ function closeChapter() {
         "";
 
 
-    /*
-       Desbloqueamos inmediatamente
-       el siguiente capítulo.
-    */
-
     if (
         currentChapter !== null &&
         currentChapter < 6 &&
@@ -3508,11 +3599,6 @@ function closeChapter() {
 
     }
 
-
-    /*
-       Si terminó el capítulo 6,
-       vamos inmediatamente al final.
-    */
 
     if (
         currentChapter === 6
@@ -3758,7 +3844,7 @@ document.addEventListener(
 
 
 /* =========================================================
-   EVITAR ZOOM GESTUAL
+   EVITAR ZOOM
 ========================================================= */
 
 document.addEventListener(
