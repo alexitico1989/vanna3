@@ -14,10 +14,6 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
 <style>
 
-/* =========================================================
-   FUENTES
-========================================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap');
 
 
@@ -77,7 +73,9 @@ body {
 
     position: fixed;
     inset: 0;
+
     z-index: -20;
+
     overflow: hidden;
 
     background:
@@ -130,17 +128,24 @@ body {
             transparent 70%
         );
 
-    animation: breathing 7s infinite ease-in-out;
+    animation:
+        breathing
+        7s infinite ease-in-out;
 }
+
 
 @keyframes breathing {
 
     0%,100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform:
+            translate(-50%, -50%)
+            scale(1);
     }
 
     50% {
-        transform: translate(-50%, -50%) scale(1.12);
+        transform:
+            translate(-50%, -50%)
+            scale(1.12);
     }
 }
 
@@ -152,8 +157,11 @@ body {
 .stars {
 
     position: fixed;
+
     inset: 0;
+
     z-index: -5;
+
     pointer-events: none;
 }
 
@@ -170,7 +178,9 @@ body {
 
     opacity: .2;
 
-    animation: starFloat 5s infinite ease-in-out;
+    animation:
+        starFloat
+        5s infinite ease-in-out;
 }
 
 .star:nth-child(1) {
@@ -232,31 +242,39 @@ body {
     animation-delay: 3.5s;
 }
 
+
 @keyframes starFloat {
 
     0%,100% {
         opacity: .12;
-        transform: translateY(0) scale(1);
+        transform:
+            translateY(0)
+            scale(1);
     }
 
     50% {
         opacity: .8;
-        transform: translateY(-7px) scale(1.8);
+        transform:
+            translateY(-7px)
+            scale(1.8);
     }
 }
 
 
 /* =========================================================
-   PARTÍCULAS
+   PARTICULAS
 ========================================================= */
 
 .particles {
 
     position: fixed;
+
     inset: 0;
+
     z-index: -4;
 
     pointer-events: none;
+
     overflow: hidden;
 }
 
@@ -273,7 +291,9 @@ body {
 
     border-radius: 50%;
 
-    animation: particleMove linear infinite;
+    animation:
+        particleMove
+        linear infinite;
 }
 
 .particle:nth-child(1) {
@@ -310,10 +330,14 @@ body {
     animation-delay: 5s;
 }
 
+
 @keyframes particleMove {
 
     from {
-        transform: translateY(0) translateX(0);
+        transform:
+            translateY(0)
+            translateX(0);
+
         opacity: 0;
     }
 
@@ -326,7 +350,10 @@ body {
     }
 
     to {
-        transform: translateY(-110vh) translateX(25px);
+        transform:
+            translateY(-110vh)
+            translateX(25px);
+
         opacity: 0;
     }
 }
@@ -339,6 +366,7 @@ body {
 #intro {
 
     position: fixed;
+
     inset: 0;
 
     z-index: 1000;
@@ -383,21 +411,27 @@ body {
 .intro-content {
 
     width: 100%;
+
     max-width: 520px;
 
-    animation: introAppear 1.6s ease;
+    animation:
+        introAppear
+        1.6s ease;
 }
+
 
 @keyframes introAppear {
 
     from {
         opacity: 0;
-        transform: translateY(25px);
+        transform:
+            translateY(25px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 }
 
@@ -416,7 +450,9 @@ body {
 
 .intro-title {
 
-    font-family: "Cormorant Garamond", serif;
+    font-family:
+        "Cormorant Garamond",
+        serif;
 
     font-size:
         clamp(65px, 20vw, 110px);
@@ -438,7 +474,9 @@ body {
 
     color: var(--text);
 
-    font-family: "Cormorant Garamond", serif;
+    font-family:
+        "Cormorant Garamond",
+        serif;
 
     font-size: 22px;
 
@@ -485,7 +523,7 @@ body {
 
 
 /* =========================================================
-   CONTROL MÚSICA
+   MÚSICA
 ========================================================= */
 
 .music-control {
@@ -570,7 +608,9 @@ body {
 
     background: var(--gold);
 
-    animation: musicBar .8s infinite ease-in-out;
+    animation:
+        musicBar
+        .8s infinite ease-in-out;
 }
 
 .music-bars span:nth-child(2) {
@@ -589,6 +629,7 @@ body {
     opacity: 1;
 }
 
+
 @keyframes musicBar {
 
     0%,100% {
@@ -602,7 +643,7 @@ body {
 
 
 /* =========================================================
-   TITULO
+   TITULO SUPERIOR
 ========================================================= */
 
 .top-title {
@@ -675,7 +716,8 @@ main {
     max-height: 620px;
 
     transition:
-        transform .8s cubic-bezier(.22,.61,.36,1);
+        transform .8s
+        cubic-bezier(.22,.61,.36,1);
 }
 
 
@@ -715,7 +757,6 @@ main {
         rgba(213,180,119,.6);
 
     opacity: 1;
-
 }
 
 
@@ -789,6 +830,7 @@ main {
         5s infinite ease-in-out;
 }
 
+
 @keyframes centerPulse {
 
     0%,100% {
@@ -813,6 +855,7 @@ main {
             rgba(213,180,119,.08);
     }
 }
+
 
 @keyframes centerRing {
 
@@ -901,25 +944,8 @@ main {
 
 
 /* =========================================================
-   POSICIONES CORRELATIVAS
+   POSICIONES
 ========================================================= */
-
-/*
-   La lectura visual ahora es:
-
-                  01
-
-           06              02
-
-
-                CENTRO
-
-
-           05              03
-
-                  04
-
-*/
 
 .node-1 {
     left: 50%;
@@ -953,7 +979,7 @@ main {
 
 
 /* =========================================================
-   NODO BLOQUEADO
+   BLOQUEADOS
 ========================================================= */
 
 .node.locked {
@@ -969,7 +995,7 @@ main {
 
 
 /* =========================================================
-   NODO ACTIVO
+   DESBLOQUEADOS
 ========================================================= */
 
 .node.unlocked {
@@ -978,6 +1004,7 @@ main {
         nodeBreathing
         3s infinite ease-in-out;
 }
+
 
 @keyframes nodeBreathing {
 
@@ -998,7 +1025,7 @@ main {
 
 
 /* =========================================================
-   SIGUIENTE NODO
+   NODO ACTUAL
 ========================================================= */
 
 .node.current {
@@ -1018,6 +1045,7 @@ main {
         currentNode
         1.8s infinite ease-in-out;
 }
+
 
 @keyframes currentNode {
 
@@ -1060,7 +1088,7 @@ main {
 
 
 /* =========================================================
-   ICONO 1 - ESTRELLA GIRANDO
+   ANIMACIONES ICONOS
 ========================================================= */
 
 .node-1 svg {
@@ -1081,10 +1109,6 @@ main {
     }
 }
 
-
-/* =========================================================
-   ICONO 2 - CÁMARA
-========================================================= */
 
 .node-2 svg {
 
@@ -1125,10 +1149,6 @@ main {
 }
 
 
-/* =========================================================
-   ICONO 3 - DOS ÓRBITAS
-========================================================= */
-
 .node-3 svg {
 
     animation:
@@ -1148,10 +1168,6 @@ main {
 }
 
 
-/* =========================================================
-   ICONO 4 - CASA
-========================================================= */
-
 .node-4 svg {
 
     animation:
@@ -1170,10 +1186,6 @@ main {
     }
 }
 
-
-/* =========================================================
-   ICONO 5 - ESTRELLA PROTEGIDA
-========================================================= */
 
 .node-5 svg {
 
@@ -1200,10 +1212,6 @@ main {
 }
 
 
-/* =========================================================
-   ICONO 6 - INFINITO
-========================================================= */
-
 .node-6 svg {
 
     animation:
@@ -1228,10 +1236,6 @@ main {
     }
 }
 
-
-/* =========================================================
-   TEXTO NODO
-========================================================= */
 
 .node span {
 
@@ -1338,7 +1342,7 @@ main {
 
 
 /* =========================================================
-   CAJA
+   CAJA MODAL
 ========================================================= */
 
 .modal-box {
@@ -1440,22 +1444,40 @@ main {
 
 
 /* =========================================================
-   FOTO
+   GALERÍA DE FOTOS
 ========================================================= */
 
-.chapter-photo {
+.chapter-gallery {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        10px;
+
+    width:
+        100%;
+
+    margin:
+        0 auto 28px;
+}
+
+.chapter-gallery.single {
+
+    grid-template-columns:
+        1fr;
+}
+
+.gallery-photo {
 
     width:
         100%;
 
     aspect-ratio:
         4 / 5;
-
-    max-height:
-        430px;
-
-    margin:
-        0 auto 28px;
 
     overflow:
         hidden;
@@ -1475,7 +1497,7 @@ main {
         );
 }
 
-.chapter-photo img {
+.gallery-photo img {
 
     width:
         100%;
@@ -1492,22 +1514,18 @@ main {
     animation:
         photoReveal
         .8s ease;
+
+    transition:
+        transform .8s ease;
 }
 
-@keyframes photoReveal {
+.gallery-photo:active img {
 
-    from {
-        opacity: 0;
-        transform: scale(1.04);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    transform:
+        scale(1.04);
 }
 
-.chapter-photo::after {
+.gallery-photo::after {
 
     content: "";
 
@@ -1520,15 +1538,39 @@ main {
     background:
         linear-gradient(
             to top,
-            rgba(0,0,0,.28),
-            transparent 45%
+            rgba(0,0,0,.25),
+            transparent 50%
         );
 }
 
+
+@keyframes photoReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            scale(1.04);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
 .photo-placeholder {
 
-    width: 100%;
-    height: 100%;
+    min-height:
+        260px;
+
+    width:
+        100%;
 
     display:
         flex;
@@ -1543,13 +1585,17 @@ main {
         #69655e;
 
     font-size:
-        8px;
+        7px;
 
     letter-spacing:
-        3px;
+        2px;
 
     text-transform:
         uppercase;
+
+    border:
+        1px dashed
+        rgba(213,180,119,.12);
 }
 
 
@@ -1589,6 +1635,7 @@ main {
         .6s ease both;
 }
 
+
 .chapter-text p:nth-child(2) {
     animation-delay: .06s;
 }
@@ -1609,22 +1656,25 @@ main {
     animation-delay: .30s;
 }
 
+
 @keyframes textReveal {
 
     from {
         opacity: 0;
-        transform: translateY(8px);
+        transform:
+            translateY(8px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 }
 
 
 /* =========================================================
-   FRASE
+   FRASE DESTACADA
 ========================================================= */
 
 .chapter-highlight {
@@ -1760,11 +1810,6 @@ main {
         visible;
 }
 
-
-/* =========================================================
-   LUZ FINAL
-========================================================= */
-
 .final-light {
 
     width:
@@ -1787,7 +1832,8 @@ main {
         scale(0);
 
     transition:
-        transform .35s cubic-bezier(.17,.67,.32,1.4);
+        transform .35s
+        cubic-bezier(.17,.67,.32,1.4);
 }
 
 .final-transition.active .final-light {
@@ -1798,7 +1844,7 @@ main {
 
 
 /* =========================================================
-   PANTALLA FINAL
+   FINAL
 ========================================================= */
 
 .final-screen {
@@ -1861,6 +1907,7 @@ main {
         .45s ease;
 }
 
+
 @keyframes finalAppear {
 
     from {
@@ -1885,16 +1932,19 @@ main {
         .55s ease;
 }
 
+
 @keyframes finalRise {
 
     from {
         opacity: 0;
-        transform: translateY(18px);
+        transform:
+            translateY(18px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 }
 
@@ -2109,6 +2159,7 @@ main {
 }
 
 </style>
+
 </head>
 
 
@@ -2207,7 +2258,7 @@ main {
 
 
 <!-- =====================================================
-     MÚSICA
+     CONTROL MÚSICA
 ===================================================== -->
 
 <button
@@ -2217,7 +2268,6 @@ main {
 >
 
     <svg
-        id="musicIcon"
         viewBox="0 0 24 24"
     >
 
@@ -2335,9 +2385,7 @@ main {
     </svg>
 
 
-    <!-- =================================================
-         CENTRO
-    ================================================== -->
+    <!-- CENTRO -->
 
     <div class="center">
 
@@ -2352,9 +2400,7 @@ main {
     </div>
 
 
-    <!-- =================================================
-         01
-    ================================================== -->
+    <!-- 01 -->
 
     <button
         class="node node-1 unlocked current"
@@ -2387,9 +2433,7 @@ main {
     </button>
 
 
-    <!-- =================================================
-         02
-    ================================================== -->
+    <!-- 02 -->
 
     <button
         class="node node-2 locked"
@@ -2431,9 +2475,7 @@ main {
     </button>
 
 
-    <!-- =================================================
-         03
-    ================================================== -->
+    <!-- 03 -->
 
     <button
         class="node node-3 locked"
@@ -2464,9 +2506,7 @@ main {
     </button>
 
 
-    <!-- =================================================
-         04
-    ================================================== -->
+    <!-- 04 -->
 
     <button
         class="node node-4 locked"
@@ -2511,9 +2551,7 @@ main {
     </button>
 
 
-    <!-- =================================================
-         05
-    ================================================== -->
+    <!-- 05 -->
 
     <button
         class="node node-5 locked"
@@ -2560,9 +2598,7 @@ main {
     </button>
 
 
-    <!-- =================================================
-         06
-    ================================================== -->
+    <!-- 06 -->
 
     <button
         class="node node-6 locked"
@@ -2641,7 +2677,6 @@ main {
 
     <article class="modal-box">
 
-
         <div
             class="chapter-number"
             id="chapterNumber"
@@ -2659,12 +2694,12 @@ main {
 
 
         <div
-            class="chapter-photo"
-            id="chapterPhoto"
+            class="chapter-gallery"
+            id="chapterGallery"
         >
 
             <div class="photo-placeholder">
-                AQUÍ IRÁ NUESTRA FOTO
+                AQUÍ APARECERÁN NUESTRAS FOTOS
             </div>
 
         </div>
@@ -2692,7 +2727,6 @@ main {
 
         </button>
 
-
     </article>
 
 </div>
@@ -2713,7 +2747,7 @@ main {
 
 
 <!-- =====================================================
-     FINAL
+     PANTALLA FINAL
 ===================================================== -->
 
 <div
@@ -2764,8 +2798,9 @@ main {
 
 <script>
 
+
 /* =========================================================
-   AUDIO
+   MÚSICA
 ========================================================= */
 
 const music =
@@ -2781,10 +2816,6 @@ const musicControl =
 let musicPlaying = false;
 
 
-/* =========================================================
-   FADE AUDIO
-========================================================= */
-
 function fadeVolume(
     start,
     end,
@@ -2794,9 +2825,7 @@ function fadeVolume(
     const startTime =
         performance.now();
 
-    function animate(
-        currentTime
-    ) {
+    function animate(currentTime) {
 
         const elapsed =
             currentTime - startTime;
@@ -2827,10 +2856,6 @@ function fadeVolume(
     );
 }
 
-
-/* =========================================================
-   INICIAR MÚSICA
-========================================================= */
 
 function startMusic() {
 
@@ -2866,10 +2891,6 @@ function startMusic() {
 }
 
 
-/* =========================================================
-   CONTROL MÚSICA
-========================================================= */
-
 function toggleMusic() {
 
     if (musicPlaying) {
@@ -2898,6 +2919,7 @@ function toggleMusic() {
             });
 
     }
+
 }
 
 
@@ -2912,6 +2934,7 @@ function enterStory() {
     document
         .getElementById("intro")
         .classList.add("hidden");
+
 }
 
 
@@ -2928,7 +2951,13 @@ const chapters = {
 
         title: "El comienzo",
 
-        photo: "",
+        photos: [
+
+            "fotos/01-comienzo-1.jpg",
+
+            "fotos/01-comienzo-2.jpg"
+
+        ],
 
         text: `
 
@@ -2971,7 +3000,13 @@ const chapters = {
 
         title: "Nuestros momentos",
 
-        photo: "",
+        photos: [
+
+            "fotos/02-momentos-1.jpg",
+
+            "fotos/02-momentos-2.jpg"
+
+        ],
 
         text: `
 
@@ -3009,7 +3044,13 @@ const chapters = {
 
         title: "Nosotros",
 
-        photo: "",
+        photos: [
+
+            "fotos/03-nosotros-1.jpg",
+
+            "fotos/03-nosotros-2.jpg"
+
+        ],
 
         text: `
 
@@ -3050,7 +3091,13 @@ const chapters = {
 
         title: "Tu mundo",
 
-        photo: "",
+        photos: [
+
+            "fotos/04-tu-mundo-1.jpg",
+
+            "fotos/04-tu-mundo-2.jpg"
+
+        ],
 
         text: `
 
@@ -3092,7 +3139,13 @@ const chapters = {
 
         title: "Ella",
 
-        photo: "",
+        photos: [
+
+            "fotos/05-ella-1.jpg",
+
+            "fotos/05-ella-2.jpg"
+
+        ],
 
         text: `
 
@@ -3141,7 +3194,13 @@ const chapters = {
 
         title: "Lo que viene",
 
-        photo: "",
+        photos: [
+
+            "fotos/06-despues-1.jpg",
+
+            "fotos/06-despues-2.jpg"
+
+        ],
 
         text: `
 
@@ -3180,7 +3239,7 @@ const chapters = {
 
         highlight: `
             Esta página tiene un final.
-            Nuestra historia todavía jamás.
+            Nuestra historia todavía no.
         `
     }
 
@@ -3197,7 +3256,7 @@ let currentChapter = null;
 
 
 /* =========================================================
-   ACTUALIZAR NODO ACTUAL
+   ACTUALIZAR NODO
 ========================================================= */
 
 function updateCurrentNode() {
@@ -3230,6 +3289,96 @@ function updateCurrentNode() {
 
 
 /* =========================================================
+   CREAR GALERÍA
+========================================================= */
+
+function renderGallery(
+    photos
+) {
+
+    const gallery =
+        document.getElementById(
+            "chapterGallery"
+        );
+
+
+    gallery.innerHTML = "";
+
+    gallery.classList.remove(
+        "single"
+    );
+
+
+    photos.forEach(
+        (src, index) => {
+
+            const wrapper =
+                document.createElement(
+                    "div"
+                );
+
+            wrapper.className =
+                "gallery-photo";
+
+
+            const img =
+                document.createElement(
+                    "img"
+                );
+
+            img.src =
+                src;
+
+            img.alt =
+                `Fotografía ${index + 1}`;
+
+
+            /*
+               Si todavía no existe la foto,
+               mantenemos un espacio elegante
+               en lugar de mostrar un icono roto.
+            */
+
+            img.onerror =
+                function() {
+
+                    wrapper.innerHTML = `
+
+                        <div class="photo-placeholder">
+
+                            FOTO ${index + 1}
+
+                        </div>
+
+                    `;
+
+                };
+
+
+            wrapper.appendChild(
+                img
+            );
+
+            gallery.appendChild(
+                wrapper
+            );
+
+        }
+    );
+
+
+    if (photos.length === 1) {
+
+        gallery.classList.add(
+            "single"
+        );
+
+    }
+
+}
+
+
+/* =========================================================
    ABRIR CAPÍTULO
 ========================================================= */
 
@@ -3239,6 +3388,7 @@ function openChapter(id) {
         document.querySelector(
             `.node[data-id="${id}"]`
         );
+
 
     if (!node) return;
 
@@ -3256,6 +3406,7 @@ function openChapter(id) {
 
     const chapter =
         chapters[id];
+
 
     currentChapter =
         id;
@@ -3293,36 +3444,9 @@ function openChapter(id) {
         chapter.highlight;
 
 
-    const photo =
-        document.getElementById(
-            "chapterPhoto"
-        );
-
-
-    if (chapter.photo) {
-
-        photo.innerHTML = `
-
-            <img
-                src="${chapter.photo}"
-                alt="${chapter.title}"
-            >
-
-        `;
-
-    } else {
-
-        photo.innerHTML = `
-
-            <div class="photo-placeholder">
-
-                AQUÍ IRÁ NUESTRA FOTO
-
-            </div>
-
-        `;
-
-    }
+    renderGallery(
+        chapter.photos
+    );
 
 
     document
@@ -3343,6 +3467,7 @@ function openChapter(id) {
 
     document.body.style.overflow =
         "hidden";
+
 }
 
 
@@ -3366,7 +3491,8 @@ function closeChapter() {
 
 
     /*
-       CAPÍTULOS 1 → 5
+       Desbloqueamos inmediatamente
+       el siguiente capítulo.
     */
 
     if (
@@ -3383,7 +3509,8 @@ function closeChapter() {
 
 
     /*
-       CAPÍTULO 6
+       Si terminó el capítulo 6,
+       vamos inmediatamente al final.
     */
 
     if (
@@ -3410,6 +3537,7 @@ function unlockChapter(id) {
         document.querySelector(
             `.node[data-id="${id}"]`
         );
+
 
     if (!node) return;
 
@@ -3453,11 +3581,6 @@ function unlockChapter(id) {
     updateCurrentNode();
 
 
-    /*
-       Cuando se desbloquea el 6,
-       hacemos que destaque inmediatamente.
-    */
-
     if (id === 6) {
 
         highlightFinalNode();
@@ -3468,7 +3591,7 @@ function unlockChapter(id) {
 
 
 /* =========================================================
-   DESTACAR 06
+   DESTACAR FINAL
 ========================================================= */
 
 function highlightFinalNode() {
@@ -3478,6 +3601,7 @@ function highlightFinalNode() {
             ".node-6"
         );
 
+
     if (!finalNode) return;
 
 
@@ -3485,12 +3609,6 @@ function highlightFinalNode() {
         "current"
     );
 
-
-    /*
-       Pequeño movimiento visual de la
-       constelación para llamar la atención
-       hacia el lado izquierdo.
-    */
 
     const constellation =
         document.querySelector(
@@ -3501,6 +3619,7 @@ function highlightFinalNode() {
     constellation.animate(
 
         [
+
             {
                 transform:
                     "translateX(0)"
@@ -3519,9 +3638,12 @@ function highlightFinalNode() {
         ],
 
         {
+
             duration: 500,
+
             easing:
                 "cubic-bezier(.22,.61,.36,1)"
+
         }
 
     );
@@ -3541,11 +3663,6 @@ function showFinal() {
         );
 
 
-    /*
-       Apagamos ligeramente la música
-       durante el cambio.
-    */
-
     if (musicPlaying) {
 
         fadeVolume(
@@ -3561,11 +3678,6 @@ function showFinal() {
         "active"
     );
 
-
-    /*
-       La pantalla final entra
-       prácticamente inmediatamente.
-    */
 
     setTimeout(
         () => {
@@ -3600,7 +3712,7 @@ function showFinal() {
 
 
 /* =========================================================
-   CLICK FUERA DEL MODAL
+   CLICK FUERA
 ========================================================= */
 
 document
@@ -3624,7 +3736,7 @@ document
 
 
 /* =========================================================
-   ESCAPE
+   ESC
 ========================================================= */
 
 document.addEventListener(
@@ -3669,6 +3781,7 @@ document
     .classList.add(
         "active"
     );
+
 
 updateCurrentNode();
 
